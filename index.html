@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GulpRunner</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type='text/javascript' src="js/jquery-1.11.1.js"></script>
+    <script type='text/javascript' src="js/materialize.js"></script>
+    <script type='text/javascript' src="js/index.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo right">GulpRunner</a>
+        <ul id="nav-mobile" class="left side-nav">
+          <li><a href="index.html">New Project</a></li>
+        </ul>
+        <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+      </div>
+    </nav>
+    <script>
+    $(document).ready(function(){
+      $(".button-collapse").sideNav();
+    })
+    </script>
+    <div class="container">
+      <div class="row">
+        <div class="col grid-example s12 m3">
+          <input id="browse" type="file" value="Browser Folder" nwdirectory onChange="Main.getDir(event);" style="display:none;"/>
+          <a id="open-proj" href="javascript:;" class="waves-effect waves-light btn">Open Project</a>
+          <h4>Tasks</h4>
+          <div class="collection">
+            <span class="notfound">No task found...</span>
+          </div>
+          <a id="stop" href="javascript:;" class="waves-effect waves-light btn disabled">Stop</a>
+        </div>
+        <div class="col s12 m9">
+          <label>Output</label>
+          <textarea readonly rows="20" cols="100" id="output"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <span class="status"></span>
+      </div>
+
+
+    </div>
+  </body>
+</html>

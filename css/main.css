@@ -1,0 +1,36 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  height: 600px;
+}
+
+.container{
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.is-hidden{
+  display: none;
+}
+
+#output{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+input{
+  width: 100%;
+}
+
+.collection{
+  overflow-y: scroll;
+  max-height: 320px;
+}

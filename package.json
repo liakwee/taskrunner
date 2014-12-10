@@ -1,0 +1,60 @@
+{
+  "webexe_settings": {
+    "linux-x32": false,
+    "download_dir": "/Users/liakwee/Downloads",
+    "windows": true,
+    "mac": true,
+    "nw_version": "0.11.2",
+    "force_download": true,
+    "linux-x64": false
+  },
+  "name": "gulpRunner",
+  "nodejs": true,
+  "description": "GUI for running gulp projects",
+  "single-instance": true,
+  "keywords": [
+    "gulp"
+  ],
+  "window": {
+    "fullscreen": false,
+    "min_height": 200,
+    "resizable": false,
+    "title": "gulpRunner",
+    "always-on-top": false,
+    "frame": true,
+    "max_width": 800,
+    "height": 640,
+    "exe_icon": "",
+    "visible": true,
+    "as_desktop": true,
+    "max_height": 600,
+    "min_width": 400,
+    "position": "center",
+    "show_in_taskbar": true,
+    "mac_app_icon": "",
+    "width": 800,
+    "toolbar": false,
+    "icon": "link.png"
+  },
+  "version": "0.1.0",
+  "dependencies": {
+    "deck": "latest",
+    "node-notifier": "^4.0.2"
+  },
+  "webkit": {
+    "page-cache": false,
+    "java": false,
+    "plugin": true
+  },
+  "devDependencies": {
+    "lodash": "^2.4.1",
+    "gulp": "^3.6.2",
+    "display-notification": "^0.1.0",
+    "qrcode-npm": "0.0.3",
+    "findup-sync": "^0.1.3",
+    "deferred-exec": "^0.3.1",
+    "current-path": "^1.0.0"
+  },
+  "main": "index.html",
+  "node-main": ""
+}
